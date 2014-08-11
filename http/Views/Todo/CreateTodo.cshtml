@@ -1,0 +1,9 @@
+﻿@model CreateTodo
+
+@using (Html.BeginForm("CreateTodo", "Todo"))
+{
+	@Html.TextBoxFor(x => x.Title)
+	@Html.DropDownListFor(x => x.AssignedTo, SelectItemHelper.From((IEnumerable<AssignedTo>)ViewBag.Users, x => x.UserName, x => string.Format("{0} ({1})", x.DisplayName, x.TodoItemCount)))
+	
+	<input type="submit" value="Create" />
+}

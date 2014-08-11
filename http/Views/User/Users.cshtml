@@ -1,0 +1,11 @@
+﻿@model IEnumerable<User>
+
+@if (Model.Any())
+{
+	<ul>
+		@foreach (var user in Model.OrderBy(x => x.DisplayName))
+		{
+			@Html.Partial("User", user)
+		}
+	</ul>
+}

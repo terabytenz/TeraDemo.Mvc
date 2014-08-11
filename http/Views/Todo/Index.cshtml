@@ -1,0 +1,15 @@
+﻿@model Application.Todo.Index.Index
+
+@Html.Partial("TodoItems", Model.Items, Model.AsViewData())
+
+@Html.Partial("CreateTodo", new CreateTodo(), Model.AsViewData(x => x.Users))
+
+<div>
+	@foreach (var user in Model.Users.Where(x => !x.IsUnassignedUser))
+	{
+		<span>
+			@user.UserName
+			<em>@user.TodoItemCount</em>
+		</span>
+	}
+</div>

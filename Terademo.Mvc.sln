@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeraDemo.Mvc", "http\TeraDemo.Mvc.csproj", "{A6A79FAF-2834-4F01-9DA4-FF1DF13F9FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specifications", "Specifications\Specifications.csproj", "{6FEEF82B-B626-42DC-9F53-DF3C2D57781A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{3211B99A-26CE-4424-A3DD-D4457BE85F4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E0593C88-90FB-44C4-B1F5-BB3E78B8A1EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6A79FAF-2834-4F01-9DA4-FF1DF13F9FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A79FAF-2834-4F01-9DA4-FF1DF13F9FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A79FAF-2834-4F01-9DA4-FF1DF13F9FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A79FAF-2834-4F01-9DA4-FF1DF13F9FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEEF82B-B626-42DC-9F53-DF3C2D57781A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEEF82B-B626-42DC-9F53-DF3C2D57781A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEEF82B-B626-42DC-9F53-DF3C2D57781A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEEF82B-B626-42DC-9F53-DF3C2D57781A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3211B99A-26CE-4424-A3DD-D4457BE85F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3211B99A-26CE-4424-A3DD-D4457BE85F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3211B99A-26CE-4424-A3DD-D4457BE85F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3211B99A-26CE-4424-A3DD-D4457BE85F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FEEF82B-B626-42DC-9F53-DF3C2D57781A} = {E0593C88-90FB-44C4-B1F5-BB3E78B8A1EA}
+	EndGlobalSection
+EndGlobal

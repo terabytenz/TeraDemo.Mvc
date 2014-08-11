@@ -1,0 +1,16 @@
+﻿@model CreateUser
+
+@using (Html.BeginForm("CreateUser", "User"))
+{
+	<div>
+		@Html.LabelFor(x => x.DisplayName)
+		@Html.TextBoxFor(x => x.DisplayName)
+	</div>
+	
+	<div>
+		@Html.LabelFor(x => x.UserName)
+		@Html.TextBoxFor(x => x.UserName)
+	</div>
+	
+	<input type="submit" value="Create" />
+}

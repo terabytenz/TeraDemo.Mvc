@@ -1,0 +1,18 @@
+﻿@model TodoItem
+
+<li>
+	<strong>
+		<a href="@Url.Action("Details", new { id = @Model.Id })">@Model.Title</a>
+	</strong>
+	
+	@if (Model.AssignedTo != null)
+	{
+		<span>@Model.AssignedTo.DisplayName</span>	 
+	}
+
+	@using (Html.BeginForm("Complete", "Todo"))
+	{
+		@Html.HiddenFor(x => x.Id)
+		<input type="submit" value="Complete" />
+	}
+</li>

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<TodoItem>
+
+@if (Model.Any())
+{
+	<ol>
+		@foreach (var item in Model)
+		{
+			@Html.Partial("TodoItem", item, new ViewDataDictionary(ViewData))
+		}
+	</ol>
+}
