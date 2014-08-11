@@ -21,7 +21,7 @@ namespace Terademo.Mvc.Controllers
 			return View(model);
 		}
 
-		public async Task<ActionResult> CreateUser(CreateUser model)
+		public async Task<ActionResult> Create(CreateUser model)
 		{
 			await _mediator.SendAsync(model);
 			return RedirectToAction("Index", "Todo");

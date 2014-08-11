@@ -167,7 +167,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Todo\TodoItems.cshtml" />
+    <Content Include="Views\Todo\Partials\TodoItems.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -176,10 +176,10 @@
     <Content Include="Views\Todo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Todo\TodoItem.cshtml" />
+    <Content Include="Views\Todo\Partials\TodoItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Todo\CreateTodo.cshtml" />
+    <Content Include="Views\Todo\Partials\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj">
@@ -191,16 +191,19 @@
     <Content Include="Views\User\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\User\Users.cshtml" />
+    <Content Include="Views\User\Partials\Users.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\User\User.cshtml" />
+    <Content Include="Views\User\Partials\User.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\User\CreateUser.cshtml" />
+    <Content Include="Views\User\Partials\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Todo\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Todo\Partials\Assign.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

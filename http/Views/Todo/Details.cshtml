@@ -1,4 +1,5 @@
-﻿@model TodoDetails
+﻿@using Application.Todo.Assign
+@model TodoDetails
 
 <fieldset>
 	<legend>@Model.Title</legend>
@@ -9,12 +10,7 @@
 		</p>
 		<div>
 			@Html.LabelFor(x => x.AssignedTo)
-		
-			@using (Html.BeginForm("Assign", "Todo"))
-			{
-				@Html.HiddenFor(x => x.Id)
-				@Html.DropDownListFor(x => x.AssignedTo, SelectItemHelper.From(Model.Users, x => x.UserName, x => string.Format("{0} ({1})", x.DisplayName, x.TodoItemCount)).Selected(Model.AssignedTo.UserName))
-			}
+			@Html.Partial("Partials/Assign", new AssignTodo())		
 		</div>
 	}
 </fieldset>

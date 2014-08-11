@@ -1,8 +1,8 @@
 ﻿@model Application.Todo.Index.Index
 
-@Html.Partial("TodoItems", Model.Items, Model.AsViewData())
+@Html.Partial("Partials/TodoItems", Model.Items, Model.AsViewData())
 
-@Html.Partial("CreateTodo", new CreateTodo(), Model.AsViewData(x => x.Users))
+@Html.Partial("Partials/Create", new CreateTodo(), Model.AsViewData(x => x.Users))
 
 <div>
 	@foreach (var user in Model.Users.Where(x => !x.IsUnassignedUser))

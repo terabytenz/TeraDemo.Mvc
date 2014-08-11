@@ -1,0 +1,8 @@
+﻿@model AssignTodo
+
+@using (Html.BeginForm("Assign", "Todo"))
+{
+	@Html.HiddenFor(x => x.Id)
+	@Html.DropDownListFor(x => x.AssignedTo, SelectItemHelper.From(Model.Users, x => x.UserName, x => string.Format("{0} ({1})", x.DisplayName, x.TodoItemCount)).Selected(Model.AssignedTo.UserName))
+	<input type="submit" value="@(Model.AssignedTo.IsUnassignedUser ? "Assign" : "Re-assign")" />
+}

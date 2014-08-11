@@ -5,7 +5,7 @@
 	<ul>
 		@foreach (var user in Model.OrderBy(x => x.DisplayName))
 		{
-			@Html.Partial("User", user)
+			@Html.Partial("Partials/User", user)
 		}
 	</ul>
 }

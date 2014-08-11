@@ -5,7 +5,7 @@
 	<ol>
 		@foreach (var item in Model)
 		{
-			@Html.Partial("TodoItem", item, new ViewDataDictionary(ViewData))
+			@Html.Partial("Partials/TodoItem", item, new ViewDataDictionary(ViewData))
 		}
 	</ol>
 }
